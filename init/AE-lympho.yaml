@@ -1,0 +1,24 @@
+model: {
+  "AmlAE": {
+          "activation_function": "relu",
+          "dropout": 0.5,
+          "l2_regularizer": 0.1,
+          "encoder_neurons": [18, 12, 9],
+          "decoder_neurons": [9, 12, 18],
+          "optimizer": "adam",
+          "learning_rate": 0.001,
+          "epochs": 1000,
+          "batch_size": 10000,
+          "loss": "mse",
+          "verbose": 0,
+          "shuffle": true,
+          "validation_size": 0.1,
+          "es_monitor": "val_loss",
+          "es_patience": 50,
+          "redlr_monitor": "val_loss",
+          "redlr_learning_rate_reduce_factor": 0.2,
+          "redlr_learning_rate_min": 0.00001,
+          "redlr_patience": 10,
+          "savename_key_len": 3
+      }
+  }

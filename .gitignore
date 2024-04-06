@@ -1,0 +1,16 @@
+.o
+*.pyd
+*~
+.#*
+*.lprof
+*.swp
+*.swo
+.DS_Store
+build
+venv
+.vscode/
+
+dist/
+graphomaly.egg-info/
+*/__pycache__/*
+*/results/*
